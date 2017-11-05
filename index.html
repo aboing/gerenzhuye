@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <style type="text/css">
+        html {
+            overflow: hidden;
+        }
+
+        body {
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            background: #111;
+            width: 100%;
+            height: 100%;
+        }
+
+        #screen {
+            position: absolute;
+            left: 0;
+            top: 15%;
+            width: 900px;
+            height: 500px;
+            /*background: rgba(0, 0, 0, 0.44);*/
+        }
+
+        #screen img {
+            position: absolute;
+            cursor: pointer;
+            visibility: hidden;
+            width: 15%;
+            height: 15%;
+        }
+
+        #screen img:hover {
+            border: solid #885338;
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+        #screen img {
+            border: solid rgba(35, 35, 35, 0.76);
+            opacity: 0.7;
+        }
+
+        #bankImages {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!--导航栏-->
+<ul id="menu">
+    <li class="active" data-menuanchor="p1"><a href="#p1">自我介绍</a></li>
+    <li data-menuanchor="p2"><a href="#p2">技能介绍</a></li>
+    <li data-menuanchor="p3"><a href="#p3">项目介绍</a></li>
+    <li data-menuanchor="p4"><a href="#p4">联系方式</a></li>
+</ul>
+<!--内容开始-->
+<div class="container">
+    <div class="section">
+        <div class="bj1"></div>
+        <div class="content">
+            <div class="toux"></div>
+            <div class="wenben">
+                <p>I'm a Full Stack Developer</p>
+                <p>Either do the first or do the best</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="bj2">
+            <div class="bj2container">
+                <canvas class="box1" width="200px" height="200px"></canvas>
+                <canvas class="box2" width="200px" height="200px"></canvas>
+                <canvas class="box3" width="200px" height="200px"></canvas>
+            </div>
+            <div class="decr">
+                <span>
+                    <p>掌握Git和PHP</p>
+                </span>
+                <span>
+                    <p>运用开发框架和第三方库</p>
+                    <p>掌握前端技术</p>
+                </span>
+                <span>
+                    <p>数据库与缓存</p>
+                    <p>基本的设计能力</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="bj3">
+            <div class="bj3cont">
+                <div class="top">
+                    <span>
+                        <div class="imgbox">
+                        <img src="img/mi.jpg" alt="">
+                        </div>
+                    </span>
+                    <span>
+                        <div class="imgbox">
+                        <img src="img/tmall.gif" alt="">
+                        </div>
+                    </span>
+                    <span>
+                        <div class="imgbox">
+                        <img src="img/chinamobile.jpg" alt="">
+                        </div>
+                    </span>
+                    <span><div class="imgbox">
+                        <img src="img/shenliang.jpg" alt="">
+                        </div>
+                    </span>
+                </div>
+                <div class="bottom">
+                    <span>打字游戏</span>
+                    <span>五子棋</span>
+                    <span>便签</span>
+                    <span>其他</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    <div class="section bj4">
+        <div id="screen"></div>
+        <div class="way">
+            <div class="phone">
+                <span>电话：111111111111</span>
+                <span>邮箱：1111@163.com</span>
+            </div>
+        </div>
+        <div id="bankImages">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/1.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/2.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/3.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/4.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/5.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/6.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/7.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/8.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/9.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/10.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/11.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/12.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/13.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/14.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/1.jpg">
+            <img src="http://demo.lanrenzhijia.com/2014/album1121/images/2.jpg">
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    /* ==== start script ==== */
+    onresize = tv.resize;
+    tv.init();
+</script>
+</html>
